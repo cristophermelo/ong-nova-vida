@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os projetos sociais da ONG Nova Vida">
+    <title>ONG Nova Vida | Projetos</title>
+
+  <script type="module" crossorigin src="/assets/projetos-CH9wQTPQ.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/main-IZHu1IuB.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-DzPkLE__.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="/assets/logo-DGRVTD49.png" alt="Logo da ONG Nova Vida">
+
+        <h1>Projetos da ONG Nova Vida</h1>
+<p>Conheça os projetos da ONG Nova Vida e participe das nossas ações.</p>
+        <nav aria-label="Navegação principal">
+
+            <details class="menu-mobile">
+                <summary>☰ Menu</summary>
+
+                <div class="menu-links">
+                    <a href="index.html">Início</a>
+
+                    <details>
+                        <summary>Projetos</summary>
+
+                        <div class="submenu">
+                            <a href="projetos.html">Doações</a>
+                            <a href="projetos.html">Voluntariado</a>
+                        </div>
+                    </details>
+
+                    <a href="cadastro.html">Cadastre-se</a>
+                </div>
+            </details>
+
+            <div class="menu-desktop">
+
+                <a href="index.html">Início</a>
+
+                <details class="dropdown">
+                    <summary>Projetos</summary>
+
+                    <div class="submenu">
+                        <a href="projetos.html">Doações</a>
+                        <a href="projetos.html">Voluntariado</a>
+                    </div>
+                </details>
+
+                <a href="cadastro.html">Cadastre-se</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main id="app">
+
+        <section>
+
+            <span class="badge">Projetos Sociais</span>
+
+            <h2>Conheça nossas iniciativas</h2>
+
+            <p>
+                A ONG Nova Vida desenvolve projetos voltados para
+                ajudar pessoas em situação de vulnerabilidade e
+                incentivar a participação da comunidade.
+            </p>
+
+        </section>
+
+        <section>
+
+            <span class="badge badge-doacao">Doação</span>
+
+            <h2>Campanha de Doação</h2>
+
+            <img src="/assets/doacao-CP9K9cGv.jpg"
+                alt="Voluntários organizando alimentos para uma campanha de doação">
+
+            <p>
+                Nossa campanha arrecada alimentos, roupas e produtos
+                de higiene para famílias que precisam de apoio.
+            </p>
+
+            <h3>Materiais que podem ser doados</h3>
+
+            <!-- Lista preenchida dinamicamente pelo JS -->
+            <ul id="lista-doacoes"></ul>
+
+        </section>
+
+        <!-- GRÁFICO — Biblioteca externa Chart.js -->
+        <section>
+
+            <span class="badge">Transparência</span>
+
+            <h2>Doações recebidas nos últimos meses</h2>
+
+            <canvas id="grafico-doacoes" width="600" height="300"></canvas>
+
+        </section>
+
+        <section>
+
+            <span class="badge badge-voluntario">Voluntariado</span>
+
+            <h2>Programa de Voluntariado</h2>
+
+            <p>
+                Os voluntários podem ajudar na organização das
+                campanhas e participar das ações realizadas pela ONG.
+            </p>
+
+            <h3>Como participar</h3>
+
+            <!-- Lista preenchida dinamicamente pelo JS -->
+            <ul id="lista-voluntariado"></ul>
+
+            <p>
+                Para participar, basta realizar o cadastro através
+                do nosso formulário.
+            </p>
+
+            <a href="cadastro.html">Quero ser voluntário</a>
+
+        </section>
+
+        <section>
+
+            <span class="badge">Contribuição</span>
+
+            <h2>Outras formas de contribuir</h2>
+
+            <p>
+                Além do trabalho voluntário, também é possível
+                contribuir financeiramente para ajudar na manutenção
+                dos projetos sociais.
+            </p>
+
+            <p>
+                Para mais informações sobre como ajudar, entre em
+                contato conosco através dos dados disponíveis na
+                página inicial.
+            </p>
+
+            <a href="index.html">Voltar para a página inicial</a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ONG Nova Vida. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- ==================================================
+         TEMPLATES
+         ================================================== -->
+
+    <template id="template-item">
+        <li class="item-lista"></li>
+    </template>
+
+    <!-- ==================================================
+         BIBLIOTECA EXTERNA — Chart.js (CDN)
+         Precisa vir ANTES do script.js
+         ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <!-- Script principal da aplicação -->
+
+</body>
+
+</html>
